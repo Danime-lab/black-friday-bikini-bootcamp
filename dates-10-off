@@ -1,0 +1,72 @@
+<div style="display: flex; width: 100%; justify-content: center;">
+  <button id="wetravel-bnb-dropdown" class="sqs-block-button-element--small sqs-button-element--secondary"
+    onmouseenter="style.opacity='0.7';" onmouseleave="style.opacity='1';"
+    style="width: 100%; background-color: #ffffff; color: #000000; border: 0px; outline: 0px;">
+    Book Now
+  </button>
+</div>
+
+  <li style="border-bottom: 1px solid #E4CDBD; background-color: #ffffff;">
+    <button class="wtrvl-checkout_button" id="wetravel_button_widget5"
+      data-env="https://retreattulum.wetravel.com" data-version="v0.4" data-uid="32788101"
+      data-uuid="32788101" href="https://retreattulum.wetravel.com/checkout_embed?uuid=32788101"
+      onmouseover="style.textDecoration='underline';" onmouseleave="style.textDecoration='none';"
+      style="opacity: 1; pointer-events:visible; background-color: #ffffff !important;color:#0a1200 !important;
+        padding: 12px 8px; border: 0px;border-radius: 0px;font-family: Lettera Text,-apple-system,system-ui,Roboto,Helvetica Neue,sans-serif;
+        font-weight: 500;font-size: 14px;-webkit-font-smoothing: antialiased;text-transform: capitalize;text-align: left;
+        text-decoration: none;line-height: 14px;display: inline-block; cursor: pointer; width: 100%;">Jan
+      11, 2026</button>
+  </li>
+  <li style="border-bottom: 1px solid #E4CDBD; background-color: #ffffff;">
+    <button class="wtrvl-checkout_button" id="wetravel_button_widget8"
+      data-env="https://retreattulum.wetravel.com" data-version="v0.4" data-uid="18106063"
+      data-uuid="88663157" href="https://retreattulum.wetravel.com/checkout_embed?uuid=18106063"
+      onmouseover="style.textDecoration='underline';" onmouseleave="style.textDecoration='none';"
+      style="opacity: 1; pointer-events:visible; background-color: #ffffff !important;color:#0a1200 !important;
+        padding: 12px 8px; border: 0px;border-radius: 0px;font-family: Lettera Text,-apple-system,system-ui,Roboto,Helvetica Neue,sans-serif;
+        font-weight: 500;font-size: 14px;-webkit-font-smoothing: antialiased;text-transform: capitalize;text-align: left;
+        text-decoration: none;line-height: 14px;display: inline-block; cursor: pointer; width: 100%;">March 9, 2026</button>
+  </li>
+  <li style="border-bottom: 1px solid #E4CDBD; background-color: #ffffff;">
+    <button class="wtrvl-checkout_button" id="wetravel_button_widget9"
+      data-env="https://retreattulum.wetravel.com" data-version="v0.4" data-uid="94937992"
+      data-uuid="08928681" href="https://retreattulum.wetravel.com/checkout_embed?uuid=94937992"
+      onmouseover="style.textDecoration='underline';" onmouseleave="style.textDecoration='none';"
+      style="opacity: 1; pointer-events:visible; background-color: #ffffff !important;color:#0a1200 !important;
+        padding: 12px 8px; border: 0px;border-radius: 0px;font-family: Lettera Text,-apple-system,system-ui,Roboto,Helvetica Neue,sans-serif;
+        font-weight: 500;font-size: 14px;-webkit-font-smoothing: antialiased;text-transform: capitalize;text-align: left;
+        text-decoration: none;line-height: 14px;display: inline-block; cursor: pointer; width: 100%;">March 26, 2026</button>
+  </li>
+</ul>
+
+<script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></script>
+<script>
+  const dropdownTriggerButton = document.getElementById('wetravel-bnb-dropdown');
+  const dropdownButtonListContainer = document.getElementById('wetravel-bnb-list');
+
+  dropdownButtonListContainer.addEventListener('mouseover', (ev) => {
+    dropdownTriggerButton.style.borderRadius = '32px 32px 0px 0px';
+    dropdownButtonListContainer.style.display = 'block';
+  });
+
+  dropdownButtonListContainer.addEventListener('mouseleave', (ev) => {
+    dropdownTriggerButton.style.borderRadius = '32px';
+    dropdownButtonListContainer.style.display = 'none';
+  });
+
+  dropdownTriggerButton.addEventListener('mouseover', (ev) => {
+    dropdownTriggerButton.style.borderRadius = '32px 32px 0px 0px';
+    dropdownButtonListContainer.style.display = 'block';
+  });
+
+  dropdownTriggerButton.addEventListener('mouseleave', (ev) => {
+    dropdownTriggerButton.style.borderRadius = '32px';
+    dropdownButtonListContainer.style.display = 'none';
+  });
+</script>
+
+<style>
+  html.squarespace-damask .sqs-blockStatus {
+    display: none !important;
+  }
+</style>
